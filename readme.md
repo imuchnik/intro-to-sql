@@ -1,4 +1,4 @@
-# Modern Web Development Tools
+# Intro to SQL
 
 Slides and materials are hosted at [Intro to SQL](https://imuchnik.github.io/intro-to-sql/#/).
 
