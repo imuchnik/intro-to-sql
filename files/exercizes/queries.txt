@@ -1,0 +1,21 @@
+SELECT * FROM [Customers] where CustomerID=1
+
+SELECT * FROM [Orders] where OrderDate>'01/01/2001'
+
+SELECT * FROM [Customers] where Country like '%land%'
+
+SELECT * FROM [Customers] order by Country limit 5
+
+select
+productId,
+sum(Quantity) as total_sales
+from OrderDetails
+group by productID;
+
+select
+productId,
+sum(Quantity) as total_sales,
+avg(Quantity) as avg_sales
+from OrderDetails
+group by productID;
+

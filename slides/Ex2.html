@@ -1,0 +1,44 @@
+<section>
+    <h2>Limit</h2>
+
+    <div>
+        <pre><code>select * from table limit 10;</code></pre>
+    </div>
+
+    <div>is the first query most people run!</div>
+    <br>
+    <hr>
+    <div><h5>Comes after select, from, where, group by, having, order by</h5>
+        <hr>
+        <div>Good way to quickly browse results</div>
+
+</section>
+
+<section>
+    <h2>Group by</h2>
+    <p>GROUP BY: aggregate many rows into 1</p>
+    <p> How many products we sold?</p>
+    <pre><code>
+            SELECT
+                productId,
+                sum(Quantity) as total_sales
+            FROM OrderDetails
+            GROUP BY productID;
+    </code></pre>
+
+    <div>Average product per order?</div>
+    <pre><code>
+            SELECT
+                productId,
+                sum(Quantity) as total_sales,
+                avg(Quantity) as avg_sales,
+            FROM OrderDetails
+            GROUP BY productID;
+</code></pre>
+</section>
+
+<section>
+    <h2>What about where?</h2>
+    <p>Can still use where, comes before group by
+        To conditionally include aggregates, use having</p>
+</section>
