@@ -1,0 +1,30 @@
+<section>
+    <h2>Joins</h2>
+    <div>Why join?</div>
+    <ul>
+        <li>Not all data stored in all tables</li>
+        <li>Relationships exist between tables
+        </li>
+    </ul>
+</section>
+<section>
+    <h2>Let's unpack this:....</h2>
+    <img src="img/joins.png">
+</section>
+
+<section>
+    <h2> Let's get some practice:</h2>
+    <pre><code>
+        SELECT p.ProductName, c.CategoryName, c.Description
+        FROM [Products] as p
+        INNER JOIN Categories as c
+        on c.categoryId =p.categoryId
+
+    </code></pre> <pre><code>
+        SELECT p.ProductName, c.CategoryName, c.Description
+        FROM [Products] as p
+        LEFT JOIN Categories as c
+        on c.categoryId =p.categoryId
+
+    </code></pre>
+</section>

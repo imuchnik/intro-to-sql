@@ -19,3 +19,11 @@ avg(Quantity) as avg_sales
 from OrderDetails
 group by productID;
 
+
+#####Joins
+
+SELECT p.ProductName, c.CategoryName, c.Description
+FROM [Products] as p
+JOIN Categories as c
+on c.categoryId =p.categoryId
+
